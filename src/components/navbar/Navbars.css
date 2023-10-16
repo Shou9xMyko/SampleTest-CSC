@@ -1,0 +1,44 @@
+#ImgLogo {
+  width: 130px;
+  height: auto;
+}
+
+/* #Home,
+#Tentang,
+#Kontak {
+  font-weight: 700;
+  transition: text-decoration 0.3s ease;
+  text-decoration: none;
+}
+
+#Home:hover,
+#Tentang:hover,
+#Kontak:hover {
+  text-decoration: underline;
+} */
+
+#Home,
+#Tentang,
+#Kontak {
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+
+#Home::after,
+#Tentang::after,
+#Kontak::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+#Home:hover::after,
+#Tentang:hover::after,
+#Kontak:hover::after {
+  border-bottom: 2px solid #0d9ce9; /* Ganti dengan warna yang Anda inginkan */
+}
