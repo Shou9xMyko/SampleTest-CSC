@@ -1,0 +1,15 @@
+.btn-whatsapp {
+  background-repeat: no-repeat;
+  background-position: center;
+  /* position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  cursor: pointer;
+  border: none; */
+}
+
+.WhatsAppImage {
+  width: 50px;
+  height: auto;
+}

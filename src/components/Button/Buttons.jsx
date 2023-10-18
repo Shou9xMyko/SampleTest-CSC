@@ -35,7 +35,6 @@ const Buttons = () => {
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };

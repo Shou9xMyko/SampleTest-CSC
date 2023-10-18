@@ -2,25 +2,32 @@ import { useEffect } from "react";
 import "./App.css";
 import Navbars from "./components/navbar/Navbars";
 import Swal from "sweetalert2";
-import LogoCSC from "./assets/CSC_Logo.png";
 import Buttons from "./components/Button/Buttons";
+import WhatsAppLogo from "./assets/whatsapp.png";
 
 function App() {
   useEffect(() => {
     Swal.fire({
-      imageUrl: LogoCSC,
-      imageHeight: 250,
-      imageAlt: "Cahaya Solusi Cerdas",
-      showConfirmButton: false,
+      html: `
+        <button class="btn-joinus-popup">LEST JOIN US!</button>
+        <a href="https://api.whatsapp.com/send?phone=6288291092270" className="btn btn-whatsapp shadow shadow-lg" target="_blank">
+          <img
+            src=${WhatsAppLogo}
+            alt="We WhatsApp"
+            class="WhatsAppImage"
+          />
+        </a> 
+      `,
       showCloseButton: true,
+      showConfirmButton: false,
       customClass: {
+        popup: "popup-class",
         closeButton: "CloseButtonPopUp",
-        image: "ImgClick",
       },
     });
 
-    const closeButton = document.querySelector(".ImgClick");
-    closeButton.addEventListener("click", () => {
+    const btnJoinUsClick = document.querySelector(".btn-joinus-popup");
+    btnJoinUsClick.addEventListener("click", () => {
       window.open("https://cahayaasuransi.com/", "_blank");
     });
   }, []);
