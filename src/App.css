@@ -60,4 +60,8 @@ body {
     height: 30em;
     width: 22em;
   }
+
+  .btn-joinus-popup {
+    margin-top: 8em;
+  }
 }

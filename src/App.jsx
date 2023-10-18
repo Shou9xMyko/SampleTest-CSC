@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     Swal.fire({
       html: `
-        <button class="btn-joinus-popup">LEST JOIN US!</button>
+        <button class="btn-joinus-popup">LETS JOIN US!</button>
         <a href="https://api.whatsapp.com/send?phone=6288291092270" className="btn btn-whatsapp shadow shadow-lg" target="_blank">
           <img
             src=${WhatsAppLogo}
